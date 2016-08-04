@@ -1,0 +1,30 @@
+.wrapper {
+    text-align: center;
+
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 1px 2px #ccc;
+}
+
+.navLinks {
+    list-style-type: none;
+    text-align: left;
+}
+
+.navLinks li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #333;
+}
+
+.navLink:first-child {
+    margin-left: 0;
+}
+
+.navLinkActive {
+    font-weight: bold;
+    text-decoration: underline;
+}
