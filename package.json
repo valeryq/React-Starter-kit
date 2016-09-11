@@ -28,6 +28,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "es5-sham-ie8": "^1.0.1",
+    "es5-shim": "^4.5.9",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-router": "^2.6.1"

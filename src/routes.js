@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 import { asyncComponent } from './LazyComponents';
 import App from './components/App/App';
 
@@ -19,7 +19,7 @@ const childRoutes = [
 ];
 
 export default (
-  <Router history={browserHistory}>
+  <Router history={ window.history.pushState ? browserHistory : hashHistory }>
     <Route component={App} path="/">
       {childRoutes}
     </Route>

@@ -6,6 +6,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 module.exports = {
   entry: {
     app: './src/app',
+    ie8: ['es5-shim', 'es5-sham-ie8'],
   },
 
   output: {
@@ -22,7 +23,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
       { test: /\.css$/, loaders: ['style', 'css?modules&importLoaders=1'] },
-    ]
+    ],
   },
 
   plugins: [
