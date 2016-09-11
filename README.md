@@ -7,6 +7,7 @@
  4. Lazy load components depends on route.
  5. Hot module replacement.
  6. ESLint.
+ 7. IE8 support.
 
 ###Usage
 
