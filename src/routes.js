@@ -19,7 +19,7 @@ const childRoutes = [
 ];
 
 export default (
-  <Router history={ window.history.pushState ? browserHistory : hashHistory }>
+  <Router history={window.history.pushState ? browserHistory : hashHistory}>
     <Route component={App} path="/">
       {childRoutes}
     </Route>
